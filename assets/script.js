@@ -1,8 +1,22 @@
-let dolar = 6.1;
-
 let usdInput = document.querySelector("#usd");
 let brlInput = document.querySelector("#brl");
 let botao = document.querySelector("#botao");
+
+async function obterCotacao() {
+  try {
+    // A API abaixo é uma que achei ai na net
+    const resposta = await fetch(
+      "https://api.exchangerate-api.com/v4/latest/USD"
+    );
+    const dados = await resposta.json();
+    dolar = dados.rates.BRL; // Atualiza o valor do dólar com o valor real
+    console.log("Nova cotação do dólar: ", dolar); // Verifique a cotação no console
+  } catch (erro) {
+    console.error("Erro ao obter a cotação:", erro);
+  }
+}
+let dolar = 6.5;
+obterCotacao();
 
 botao.addEventListener("click", () => {
   alert("Tem nada aqui não :) ");
