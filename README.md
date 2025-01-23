@@ -1,4 +1,4 @@
-# Conversor de Dólar
+# 💵 Conversor de Dólar
 
 Este é um projeto simples que permite converter valores de Dólar para Real e vice-versa.
 
