@@ -15,6 +15,10 @@ Este é um projeto simples que permite converter valores de Dólar para Real e v
 
 ## Como Utilizar
 
+- Acesse a page `https://julianoaureliano.github.io/conversordolar/`
+
+  OU
+
 1. Clone o repositório para o seu ambiente local:
    ```bash
    git clone https://github.com/julianoaureliano/conversordolar.git
