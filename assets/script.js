@@ -11,12 +11,15 @@ async function obterCotacao() {
     const dados = await resposta.json();
     dolar = dados.rates.BRL; // Atualiza o valor do dólar com o valor real
     console.log("Nova cotação do dólar: ", dolar); // Verifique a cotação no console
+    document.getElementById("output").innerHTML = dolar;
   } catch (erro) {
     console.error("Erro ao obter a cotação:", erro);
   }
 }
-let dolar = 6.5;
+let dolar = 6.1;
 obterCotacao();
+
+const cotacao_dolar_atual = dolar;
 
 botao.addEventListener("click", () => {
   alert("Tem nada aqui não :) ");
